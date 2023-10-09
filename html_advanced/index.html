@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .logo {
+      margin-right: 20px;
+    }
+
+    .links {
+      display: flex;
+    }
+
+    .links a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    .block {
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .block h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .block p {
+      margin-bottom: 10px;
+    }
+
+    .block button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .block button:hover {
+      background-color: #555;
+    }
+
+    .inner-block {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .sub-block {
+      flex-basis: 23%;
+      background-color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .sub-block img {
+      width: 100%;
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+
+    .sub-block h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .sub-block p {
+      margin-bottom: 5px;
+      color: #888;
+    }
+
+    .quote {
+      display: flex;
+      align-items: center;
+    }
+
+    .quote img {
+      width: 100px;
+      margin-right: 20px;
+    }
+
+    .quote blockquote {
+      font-size: 24px;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .quote p {
+      margin-bottom: 10px;
+    }
+
+    .videos {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.videos h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.videos .video-block {
+  width: calc(25% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.videos .video-block:last-child {
+  margin-right: 0;
+}
+
+.videos .video-block img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.videos .video-block .video-content {
+  margin-bottom: 10px;
+}
+
+.videos .video-block h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.videos .video-block p {
+  margin-bottom: 5px;
+}
+
+.videos .video-block .author-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.videos .video-block .author-block img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.videos .video-block .author-block h4 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.videos .video-block .rating-block {
+  display: flex;
+  align-items: center;
+}
+
+.videos .video-block .rating-block img {
+  width: 16px;
+  margin-right: 5px;
+}
+
+.videos .video-block .rating-block p {
+  margin-bottom: 0;
+}
+.membership {
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .membership h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .membership .membership-block {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .membership .membership-block .block-item {
+      width: calc(25% - 20px);
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .membership .membership-block .block-item:last-child {
+      margin-right: 0;
+    }
+
+    .membership .membership-block img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .membership .membership-block h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .membership .membership-block p {
+      margin-bottom: 5px;
+    }
+
+    .membership  .button {
+      display: inline-block;
+      padding: 10px 16px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .faq {
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .faq h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .faq .row-block {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .faq .item-block {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    .faq .item-block h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .faq .item-block p {
+      margin-bottom: 0;
+    }
+    .footer {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .footer .global-block {
+      text-align: center;
+    }
+
+    .footer .global-block .row-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .footer .global-block .row-block img {
+      width: 50px;
+    }
+
+    .footer .global-block .block {
+      text-align: center;
+    }
+
+    .footer .global-block .block img {
+      width: 30px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="#">
+        <img src="logo.png" alt="LOGO">
+      </a>
+    </div>
+    <nav class="links">
+      <a href="#">LINK</a>
+      <a href="#">LINK</a>
+      <a href="#">LINK</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="block">
+        <h2>TITLE</h2>
+        <p>3 WORDS.</p>
+        <button>BUTTON</button>
+      </div>
+      <div class="block">
+        <h2>TITLE</h2>
+        <div class="inner-block">
+          <div class="sub-block">
+            <img src="image1.png" alt="IMAGE">
+            <h3>NAME</h3>
+            <p>SUB-TITLE</p>
+          </div>
+          <div class="sub-block">
+            <img src="image1.png" alt="IMAGE">
+            <h3>NAME</h3>
+            <p>SUB-TITLE</p>
+          </div>
+          <div class="sub-block">
+            <img src="image1.png" alt="IMAGE">
+            <h3>NAME</h3>
+            <p>SUB-TITLE</p>
+          </div>
+          <div class="sub-block">
+            <img src="image1.png" alt="IMAGE">
+            <h3>NAME</h3>
+            <p>SUB-TITLE</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="block quote">
+        <img src="quote-image.png" alt="IMAGE">
+        <div>
+          <blockquote>QUOTE</blockquote>
+          <p>AUTHER</p>
+          <p>SUB-TITLE</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="videos">
+      <h2>TITLE</h2>
+      <div class="video-block">
+        <img src="video1.png" alt="IMAGE">
+        <div class="video-content">
+          <h3>TITLE</h3>
+          <p>TEXT</p>
+          <div class="author-block">
+            <img src="author1.png" alt="IMAGE">
+            <h4>TITLE</h4>
+          </div>
+          <div class="rating-block">
+            <img src="star.png" alt="IMAGES">
+            <img src="star.png" alt="IMAGES">
+            
+            <p>TEXT</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-block">
+        <img src="video1.png" alt="IMAGE">
+        <div class="video-content">
+          <h3>TITLE</h3>
+          <p>TEXT</p>
+          <div class="author-block">
+            <img src="author1.png" alt="IMAGE">
+            <h4>TITLE</h4>
+          </div>
+          <div class="rating-block">
+            <img src="star.png" alt="IMAGES">
+            <img src="star.png" alt="IMAGES">
+            
+            <p>TEXT</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-block">
+        <img src="video1.png" alt="IMAGE">
+        <div class="video-content">
+          <h3>TITLE</h3>
+          <p>TEXT</p>
+          <div class="author-block">
+            <img src="author1.png" alt="IMAGE">
+            <h4>TITLE</h4>
+          </div>
+          <div class="rating-block">
+            <img src="star.png" alt="IMAGES">
+            <img src="star.png" alt="IMAGES">
+            
+            <p>TEXT</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-block">
+        <img src="video1.png" alt="IMAGE">
+        <div class="video-content">
+          <h3>TITLE</h3>
+          <p>TEXT</p>
+          <div class="author-block">
+            <img src="author1.png" alt="IMAGE">
+            <h4>TITLE</h4>
+          </div>
+          <div class="rating-block">
+            <img src="star.png" alt="IMAGES">
+            <img src="star.png" alt="IMAGES">
+            
+            <p>TEXT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+      <!-- Membership section -->
+  <section>
+    <div class="membership">
+      <h2>Membership</h2>
+      <div class="membership-block">
+        <div class="block-item">
+          <img src="image1.jpg" alt="Image 1">
+          <h3>Block 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          
+        </div>
+        <div class="block-item">
+          <img src="image2.jpg" alt="Image 2">
+          <h3>Block 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          
+        </div>
+        <div class="block-item">
+          <img src="image3.jpg" alt="Image 3">
+          <h3>Block 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          
+        </div>
+        <div class="block-item">
+          <img src="image4.jpg" alt="Image 4">
+          <h3>Block 4</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          
+        </div>
+      </div>
+      <a href="#" class="button">BUTTON</a>
+    </div>
+  </section>
+
+  <!-- FAQ section -->
+    <section>
+      <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="row-block">
+          <div class="item-block">
+            <h3>Question 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="item-block">
+            <h3>Question 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="row-block">
+          <div class="item-block">
+            <h3>Question 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="item-block">
+            <h3>Question 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="global-block">
+      <div class="row-block">
+        <img src="logo.png" alt="LOGO">
+        <div class="block">
+          <a href="#"><img src="social1.png" alt="IMAGE"></a>
+          <a href="#"><img src="social2.png" alt="IMAGE"></a>
+          <a href="#"><img src="social3.png" alt="IMAGE"></a>
+          
+        </div>
+        
+      </div>
+      <p>Follow us on social media</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
