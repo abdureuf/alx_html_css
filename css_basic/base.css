@@ -1,0 +1,26 @@
+/* Apply flexbox to body and main */
+body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+  }
+  
+  /* Set the width of article and aside */
+  article {
+    flex: 2;
+  }
+  
+  aside {
+    flex: 1;
+  }
+  
+  /* Enable scrolling within article and aside */
+  article,
+  aside {
+    overflow-y: auto;
+  }

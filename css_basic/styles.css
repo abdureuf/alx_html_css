@@ -1,0 +1,56 @@
+/* Apply flexbox to body and main */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+/* Set the width of article and aside */
+article {
+  flex: 2;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+aside {
+  flex: 1;
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+
+/* Enable scrolling within article and aside */
+article,
+aside {
+  overflow-y: auto;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.logo {
+  font-size: 36px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
