@@ -13,6 +13,7 @@
   }
   /*** 4. CARD ***/
   
+  
   /* Grid */
 
 .col-1-3 {
@@ -30,3 +31,18 @@
   ul.row {
     margin: -1rem;
   }
+  /* Header section */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo,
+.header-logo a {
+    float: initial !important;
+}
+
+.navbar-menu {
+    float: initial !important;
+}
