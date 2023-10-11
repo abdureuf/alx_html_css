@@ -9,11 +9,8 @@
     
   }
   
-  [class*='col-1-3'] {
-    float: none;
-  }
-  [class*='col-1-2'] {
-    float: none;
+  [class*='col-'] {
+    float: none !important;
   }
 
   img{
