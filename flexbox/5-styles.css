@@ -5,6 +5,9 @@
     --header-logo-link-top: value;
     --header-logo-link-left: value;
   }
+  :root{
+    float: initial !important;
+  }
 .row {
     display: flex;
     flex-direction: column;
