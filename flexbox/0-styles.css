@@ -1,0 +1,17 @@
+/* .container{
+    display: flex;
+    
+} */
+.row {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-item-align: center;
+    
+  }
+  
+  /* [class*='col-'] {
+    
+  } */
+  img{
+    background-color: black;
+  }
