@@ -1,18 +1,10 @@
-/* .container{
-    display: flex;
-    
-} */
-.row {
-    display: flex;
-    flex-direction: column;
-    -ms-flex-item-align: center;
-    
-  }
-  
 
-  /* img{
-    background-color: red;
-  } */
-  [class*='col-'] {
-    float: none !important;
-  }
+.row {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-item-align: center;
+}
+
+[class*='col-'] {
+  float: initial !important;
+}
