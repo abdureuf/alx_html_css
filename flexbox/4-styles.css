@@ -25,7 +25,7 @@
   
   [class*='col-'] {
     /* Remove the padding declaration */
-    padding: 0;
+    padding: none;
   
     /* Set margin to 1rem */
     margin: 1rem;
