@@ -3,9 +3,8 @@
     flex-direction: column;
     -ms-flex-item-align: center;
   }
+  /* Section Latest news ============================= */
   /*** 4. CARD ***/
-
-/* Section Latest news ============================= */
 .section-latest-news .row {
     flex-direction: row-reverse;
   }
