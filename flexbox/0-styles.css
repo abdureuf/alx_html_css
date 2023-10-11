@@ -9,9 +9,10 @@
     
   }
   
-  [class*='col-'] {
-    float: none;
-  }
+  .col-1-3,
+.col-1-2 {
+  float: none;
+}
   img{
     background-color: black;
   }
