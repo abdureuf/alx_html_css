@@ -1,0 +1,12 @@
+.row {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-item-align: center;
+  }
+  
+  [class*='col-1-3'] {
+    float: initial !important;
+  }
+  [class*='col-1-2'] {
+    float: initial !important;
+  }
