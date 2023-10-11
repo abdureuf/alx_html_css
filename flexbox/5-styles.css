@@ -34,15 +34,10 @@
   /* Header section */
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-logo,
-.header-logo a {
-    float: initial !important;
-}
-
-.navbar-menu {
-    float: initial !important;
-}
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* .navbar-menu {
+    
+  } */
