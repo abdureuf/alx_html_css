@@ -9,10 +9,10 @@
     
   }
   
+
+  /* img{
+    background-color: red;
+  } */
   [class*='col-'] {
     float: none !important;
-  }
-
-  img{
-    background-color: black;
   }
