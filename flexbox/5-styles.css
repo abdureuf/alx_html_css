@@ -1,3 +1,10 @@
+:root {
+    --header-logo-position: value;
+    --header-logo-link-display: value;
+    --header-logo-link-position: value;
+    --header-logo-link-top: value;
+    --header-logo-link-left: value;
+  }
 .row {
     display: flex;
     flex-direction: column;
