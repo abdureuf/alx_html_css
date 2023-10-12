@@ -1,9 +1,9 @@
 :root {
-    --header-logo-position: value;
-    --header-logo-link-display: value;
-    --header-logo-link-position: value;
-    --header-logo-link-top: value;
-    --header-logo-link-left: value;
+    --header-logo-position: unset;
+    --header-logo-link-display: unset;
+    --header-logo-link-position: unset;
+    --header-logo-link-top: unset;
+    --header-logo-link-left: unset;
   }
   :root{
     float: initial !important;
