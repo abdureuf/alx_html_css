@@ -60,6 +60,6 @@
   .nav .nav-item + .nav-item {
     margin: var(--nav-item-margin);
   }
-  .nav{
+  /* .nav{
     display: none;
-  }
+  } */
