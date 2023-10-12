@@ -63,7 +63,7 @@
     display: flex; /* Add this line */
   }
   .nav .nav-item {
-    /* Remove the display declaration */
+    display: none;
   }
   .nav .nav-item + .nav-item {
     margin: var(--nav-item-margin);
