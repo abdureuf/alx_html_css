@@ -59,9 +59,9 @@
   } */
   /* Navbar section */
 
-nav {
+.nav {
     display: flex; /* Add this line */
   }
-  nav .nav-item + .nav-item {
+  .nav .nav-item + .nav-item {
     margin: 0 0 0 2rem; /* Add this line */
   }
