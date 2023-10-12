@@ -5,7 +5,7 @@
     --header-logo-link-top: unset;
     --header-logo-link-left: unset;
   }
-  :root{
+  .heder-logo{
     display: none;
   }
 .row {
