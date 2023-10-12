@@ -54,7 +54,7 @@
 .nav {
     display: flex; 
   }
-  .nav-item {
+  .nav .nav-item {
     display: none;
   }
   .nav .nav-item + .nav-item {
