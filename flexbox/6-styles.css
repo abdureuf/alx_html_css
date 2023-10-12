@@ -50,18 +50,10 @@
     justify-content: space-between;
   }
   
-  /* .navbar-menu {
-    
+  
+/* .nav {
+    display: flex; Add this line
   } */
-  /* .header-logo{
-    float: none !important;
-
-  } */
-  /* Navbar section */
-
-.nav {
-    display: flex; /* Add this line */
-  }
   .nav .nav-item {
     display: none;
   }
