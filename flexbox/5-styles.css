@@ -1,9 +1,5 @@
 :root {
-    --header-logo-position: unset;
-    --header-logo-link-display: unset;
-    --header-logo-link-position: unset;
-    --header-logo-link-top: unset;
-    --header-logo-link-left: unset;
+    display: none;
   }
   .heder-logo{
     display: none;
@@ -48,10 +44,4 @@
     justify-content: space-between;
   }
   
-  /* .navbar-menu {
-    
-  } */
-  /* .header-logo{
-    float: none !important;
-
-  } */
+  
