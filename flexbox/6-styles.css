@@ -51,10 +51,10 @@
   }
   
   
-/* .nav {
-    display: flex; Add this line
-  } */
-  .nav .nav-item {
+.nav {
+    display: flex; 
+  }
+  .nav-item {
     display: none;
   }
   .nav .nav-item + .nav-item {
