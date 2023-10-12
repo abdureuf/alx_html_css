@@ -12,5 +12,5 @@
   float: initial !important;
 } */
 [class*='col-']{
-  float: left;
+  display: none;
 }

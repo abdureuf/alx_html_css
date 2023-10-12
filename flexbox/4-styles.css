@@ -30,3 +30,6 @@
   ul.row {
     margin: -1rem;
   }
+  [class*='col-']{
+    display: none;
+  }
