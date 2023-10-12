@@ -24,7 +24,7 @@
   }
   
   [class*='col-'] {
-    padding: 0;
+    padding: unset;
     margin: 1rem;
   }
   ul.row {
