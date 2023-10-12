@@ -62,6 +62,9 @@
 .nav {
     display: flex; /* Add this line */
   }
+  .nav .nav-item {
+    /* Remove the display declaration */
+  }
   .nav .nav-item + .nav-item {
-    margin: 0 0 0 2rem; /* Add this line */
+    margin: var(--nav-item-margin);
   }
