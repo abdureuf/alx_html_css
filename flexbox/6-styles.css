@@ -68,3 +68,6 @@
   .nav .nav-item + .nav-item {
     margin: var(--nav-item-margin);
   }
+  .navbar-menu{
+    display: none;
+  }
