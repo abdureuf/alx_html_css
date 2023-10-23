@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      /* background-color: #f2f2f2; */
+    }
+
+    .logo {
+      margin-right: 20px;
+    }
+
+    .links {
+      display: flex;
+    }
+
+    .links a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    .block {
+      margin-bottom: 20px;
+      /* background-color: #f9f9f9; */
+      padding: 20px;
+      text-align: center;
+    }
+
+    .block h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .block p {
+      margin-bottom: 10px;
+    }
+
+    .block button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .block button:hover {
+      background-color: #555;
+    }
+
+    .inner-block {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .sub-block {
+      flex-basis: 23%;
+      /* background-color: #fff; */
+      padding: 10px;
+      text-align: center;
+    }
+
+    .sub-block img {
+      width: 100%;
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+
+    .sub-block h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .sub-block p {
+      margin-bottom: 5px;
+      color: #888;
+    }
+
+    .quote {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .quote img {
+      width: 100px;
+      margin-right: 20px;
+    }
+
+    .quote blockquote {
+      font-size: 24px;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .quote p {
+      margin-bottom: 10px;
+    }
+
+    .videos {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.videos h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.videos .video-block {
+  width: calc(25% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.videos .video-block:last-child {
+  margin-right: 0;
+}
+
+.videos .video-block img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.videos .video-block .video-content {
+  margin-bottom: 10px;
+}
+
+.videos .video-block h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.videos .video-block p {
+  margin-bottom: 5px;
+}
+
+.videos .video-block .author-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.videos .video-block .author-block img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.videos .video-block .author-block h4 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.videos .video-block .rating-block {
+  display: flex;
+  align-items: center;
+}
+
+.videos .video-block .rating-block img {
+  width: 16px;
+  margin-right: 5px;
+}
+
+.videos .video-block .rating-block p {
+  margin-bottom: 0;
+}
+.membership {
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .membership h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .membership .membership-block {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .membership .membership-block .block-item {
+      width: calc(25% - 20px);
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .membership .membership-block .block-item:last-child {
+      margin-right: 0;
+    }
+
+    .membership .membership-block img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .membership .membership-block h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .membership .membership-block p {
+      margin-bottom: 5px;
+    }
+
+    .membership  .button {
+      display: inline-block;
+      padding: 10px 16px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .faq {
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .faq h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .faq .row-block {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .faq .item-block {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    .faq .item-block h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .faq .item-block p {
+      margin-bottom: 0;
+    }
+    .footer {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .footer .global-block {
+      text-align: center;
+    }
+
+    .footer .global-block .row-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .footer .global-block .row-block img {
+      width: 50px;
+    }
+
+    .footer .global-block .block {
+      text-align: center;
+    }
+
+    .footer .global-block .block img {
+      width: 30px;
+      margin-right: 10px;
+    }
+  </style> -->
+</head>
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-icon">
+        <span></span>
+      </label>
+      <div class="logo">
+        <img src="images/logo.png" alt=" Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">COURSES</a></li>
+        <li><a href="#">PROSING</a></li>
+        <li><a href="#">LOGIN</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Get schooled</h1>
+      <div class="pras">
+        <p class="smiles">SMILES</p>
+        <p class="smiles">GRIN</p>
+        <p class="smiles">LOUGH</p>
+      </div>
+      <a href="#" class="btn">REGISTOR FOR FREE</a>
+      <div class="learn">
+        <p class="pra" style="font-size: 20px;"> 
+          <span>Learn </span>from the pros
+      </p>
+      </div>
+    </div>
+    <div>
+      <section id="latest_news" class="section section-latest-news">
+        <div class="container">
+          <div class="section-body">
+            <ul class="row">
+              <article class="card-blog">
+                <div>
+                  <img src="images/1.png" alt="" width="150" height="150">
+                </div>
+                <p class="card-category">henry veny</p>
+                
+                <p style="color: rgba(255, 255, 255, 0.866);"> sunt his, malane</p>
+                <small>By Kelly D.</small>
+              </article>
+              <article class="card-blog">
+                <div>
+                  <img src="images/5.png" alt="" width="150" height="150">
+                </div>
+                <p class="card-category">henry veny</p>
+                
+                <p> sunt his, malane</p>
+                <small>By Kelly D.</small>
+              </article>
+              <article class="card-blog">
+                <div>
+                  <img src="images/3.png" alt="" width="150" height="150">
+                </div>
+                <p class="card-category">henry veny</p>
+                
+                <p> sunt his, malane</p>
+                <small>By Kelly D.</small>
+              </article>
+             
+                <article class="card-blog">
+                  <div>
+                    <img src="images/4.png" alt="" width="150" height="150">
+                  </div>
+                  <p class="card-category">henry veny</p>
+                  
+                  <p> sunt his, malane</p>
+                  <small>By Kelly D.</small>
+                </article>
+              
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <section class="profile">
+      <div class="proimg"> 
+        <img src="images/5.png" alt="" width="150" height="150">
+      </div>
+      <div class="protext">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis, nam alias asperiores nemo obcaecati error, dolorem iusto delectus saepe maxime quas cumque quisquam sit modi quidem. Quam, cum cumque.
+        </p>
+        <p style="font-weight: bold;">Lorem ipsum uptate.
+        </p>
+        <p>Lorem ipsum uptate.
+        </p>
+      </div>
+    </section>
+    <section class="videoList">
+      <h1 class="title">Most <span style="color:  #a4589f;">Popular</span> Tutorials</h1>
+
+  <div class="videos">
+    <div class="video">
+      <div class="thumbnail">
+        <img src="images/9.png" alt="Video 1">
+        <a class="play-icon" href="video1.mp4" target="_blank">
+          <img src="images/play.png" alt="Play">
+        </a>
+      </div>
+      <div class="info">
+        <h2 class="name">henery ven</h2>
+        <p class="description">Lorem ipsum  maxime provident iste?</p>
+        <div class="user-profile">
+          <img src="images/1.png" alt="User 1 Profile">
+          <p class="user-name">henny</p>
+        </div>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="time">10 mins</span>
+        </div>
+      </div>
+    
+    
+    </div>
+    <div class="video">
+      <div class="thumbnail">
+        <img src="images/7.png" alt="Video 1">
+        <a class="play-icon" href="video1.mp4" target="_blank">
+          <img src="images/play.png" alt="Play">
+        </a>
+      </div>
+      <div class="info">
+        <h2 class="name">henery ven</h2>
+        <p class="description">Lorem ipsum  maxime provident iste?</p>
+        <div class="user-profile">
+          <img src="images/1.png" alt="User 1 Profile">
+          <p class="user-name">henny</p>
+        </div>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="time">10 mins</span>
+        </div>
+      </div>
+    
+    
+    </div>
+    <div class="video">
+      <div class="thumbnail">
+        <img src="images/8.png" alt="Video 1">
+        <a class="play-icon" href="video1.mp4" target="_blank">
+          <img src="images/play.png" alt="Play">
+        </a>
+      </div>
+      <div class="info">
+        <h2 class="name">henery ven</h2>
+        <p class="description">Lorem ipsum  maxime provident iste?</p>
+        <div class="user-profile">
+          <img src="images/1.png" alt="User 1 Profile">
+          <p class="user-name">henny</p>
+        </div>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="time">10 mins</span>
+        </div>
+      </div>
+    
+    
+    </div>
+    <div class="video">
+      <div class="thumbnail">
+        <img src="images/6.png" alt="Video 1">
+        <a class="play-icon" href="video1.mp4" target="_blank">
+          <img src="images/play.png" alt="Play">
+        </a>
+      </div>
+      <div class="info">
+        <h2 class="name">henery ven</h2>
+        <p class="description">Lorem ipsum  maxime provident iste?</p>
+        <div class="user-profile">
+          <img src="images/1.png" alt="User 1 Profile">
+          <p class="user-name">henny</p>
+        </div>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="time">10 mins</span>
+        </div>
+      </div>
+    
+    
+    </div>
+  </div>
+    </section>
+    <section class="free-membership">
+      <h1 class="membership-title"> <span style="color:  #a4589f;">Free</span>- Membership</h1>
+
+      <div class="memberships">
+        <div class="membership">
+          <div class="smileimg">
+            <img src="images/smile.png" alt="smile image">
+          </div>
+          <div class="info">
+            <h2 class="name">henery ven</h2>
+            <p class="description">Lorem ipsum  maxime provident iste?</p>
+          </div>
+      </div>
+      <div class="membership">
+        <div class="smileimg">
+          <img src="images/smile.png" alt="smile image">
+        </div>
+        <div class="info">
+          <h2 class="name">henery ven</h2>
+          <p class="description">Lorem ipsum  maxime provident iste?</p>
+        </div>
+    </div>
+    <div class="membership">
+      <div class="smileimg">
+        <img src="images/smile.png" alt="smile image">
+      </div>
+      <div class="info">
+        <h2 class="name">henery ven</h2>
+        <p class="description">Lorem ipsum  maxime provident iste?</p>
+      </div>
+  </div>
+  <div class="membership">
+    <div class="smileimg">
+      <img src="images/smile.png" alt="smile image">
+    </div>
+    <div class="info">
+      <h2 class="name">henery ven</h2>
+      <p class="description">Lorem ipsum  maxime provident iste?</p>
+    </div>
+</div>
+     </div>
+     <a href="#" class="btn">REGISTOR FOR FREE</a>
+      </div>
+    </section>
+  <!-- FAQ section -->
+    <section>
+      <div class="faq">
+        <h2>F.A.Q</h2>
+        <div class="row-block">
+          <div class="item-block">
+            <h3>how does this work?</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quis est enim, odio perferendis natus non atque porro deleniti saepe commodi. Deserunt voluptates totam nemo perspiciatis alias, eligendi voluptatum hic.</p>
+          </div>
+          <div class="item-block">
+            <h3>how does this work?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde libero cum in ullam provident dolor eum porro, corporis sequi odio tempore quisquam qui dolores doloribus. Optio officia illum voluptates.</p>
+          </div>
+        </div>
+        <div class="row-block">
+          <div class="item-block">
+            <h3>how does this work?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quasi sapiente, suscipit repellendus nisi ipsum fugit quaerat quidem culpa aperiam vitae quis accusantium iure nobis asperiores nesciunt ut architecto placeat.</p>
+          </div>
+          <div class="item-block">
+            <h3>how does this work?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi a similique earum, aut laboriosam qui ratione atque nam necessitatibus at vero quia in consequuntur magni, blanditiis quae quasi! Ab, neque!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <!-- Footer section -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Headphones Logo">
+      </div>
+      <ul class="footer-links">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        
+      </ul>
+    </div>
+    <p class="footer-text" style="color: rgba(255, 255, 255, 0.266);">© 2023 smile school. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
