@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subscription Form</title>
+  <style>
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .form-group input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Subscription Form</h2>
+    <form id="subscriptionForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label>Subscription Preference:</label>
+        <div>
+          <input type="radio" id="monthly" name="subscription" value="monthly" required>
+          <label for="monthly">Monthly</label>
+        </div>
+        <div>
+          <input type="radio" id="yearly" name="subscription" value="yearly" required>
+          <label for="yearly">Yearly</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Subscribe">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
